@@ -30,3 +30,5 @@ console.log(2**2) // 2*2 ==4
 console.log(2**3) // 2*2*2 =8
 console.log(2**"5") // 32
 
+
+// _________ Coding Problems________________
