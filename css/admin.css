@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* default styles start */
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+/* default styles end */
+
+/* dashboard-layout parent styles start */
+.dashboard-layout{
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: 
+  "nav nav"
+  "sidenav main"
+  ;
+}
+
+/* dashboard-layout parent styles end */
+.layout{
+  background-color: aquamarine;
+  padding: 2rem;
+  
+}
+
+.header{
+    grid-area: nav;
+}
+.sidebar{
+    grid-area: sidenav;
+    border-right: 2px solid red;
+}
+.main{
+    grid-area: main;
+}
+
+
+
+/* dashbaord-layout-child styles start */
+
+/* dashbaord-layout-child styles end */
+
+
+/* Header styles */
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+}
+.brand-name{
+    font-size: 2.5rem;
+    color: orangered;
+    text-transform: capitalize;
+}
+.form-control{
+    padding: .67rem;
+    width: 250px;
+    border: none;
+    outline: .5px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: .5s all linear;
+    box-shadow: -2px 3px 2px white;
+    
+}
+.form-control:hover{
+    background-color: rgb(32, 237, 189);
+}
+.form-control::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+/* icon styles */
+.bi{
+    font-size: 1.56rem;
+    color: white;
+ 
+    padding: 5px 15px;
+}
+
+
+/* main section styles */
+.main-stats{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-stats-card{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 4px 5px white;
+    transition: .2s all linear;
+}
+.main-stats-card:hover{
+  transform: translateY(-5px);
+}
+.stats-card-header{
+     padding: 1.25rem;
+     display: flex;
+     justify-content: space-between;
+}
+.stats-card-header:hover, .bi:hover{
+    color: green;
+}
+
+
+.stats-card-footer{
+    background-color: gold;
+    padding: .96rem;
+    border-radius: 5px;
+}
+.footer-down{
+    background-color: orangered;
+}
+
+.bi-currency-dollar{
+    color: orangered;
+}

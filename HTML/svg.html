@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- svg: scalable vector graphics  which is used for developing 2d graphics-->
+     <!-- usecase  : icons graphs(bar chart line chart pie-chart) aanimation illustrations -->
+      <!-- advantages -->
+       <!-- svg can be resezied without loosing the picture  quality -->
+        <!-- svg can be animated  and svg can be searched and indexed  -->
+         <!-- svg increase the seo and it is light weight -->
+    <!-- svg can draw circle ,rect line ellipse text  etc.. -->
+     <svg width="200px" height="200px" viewbox="0 0 100 100" style="background-color: aliceblue;">
+      <!-- circle -->
+       <circle r="30" cx="50" cy="50" fill="orange" stroke="red" stroke-width="1"/>
+       <circle r="5" cx="35" cy="40" fill="yellow" stroke="red" stroke-width="1"/>
+       <circle r="5" cx="55" cy="40" fill="yellow" stroke="red" stroke-width="1"/>
+       <circle r="2" cx="58" cy="45" fill="yellow" stroke="white" stroke-width="1">
+        <animate  attributeName="cy" from="56" to="75" dur="2s" repeatCount="indefinite"/>
+       </circle>
+       <circle r="10" cx="45" cy="60" fill="yellow" stroke="red" stroke-width="1"/>
+       <ellipse rx="5" ry="7" cx="45" cy="60" fill="pink">
+         <animate  attributeName="rx" from="5" to="10" dur="2s" repeatCount="indefinite"/>
+         <animate  attributeName="ry" from="5" to="10" dur="2s" repeatCount="indefinite"/>
+       </ellipse>
+       <text x="15" y="15"  fill="red" font-family="cursive">I am dev</text>
+       <line x1="10" y1="16" x2="65" y2="15" stroke="green"/>
+     </svg>
+</body>
+</html>

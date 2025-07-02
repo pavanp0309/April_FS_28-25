@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            position: relative;
+        }
+        .btn{
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .tooltip{
+            font-size: 13px;
+            position: absolute;
+            top: 23px;
+            left: 20px;
+            /* display: none; */
+            visibility:hidden ;
+            z-index: 2;
+            border: 1px solid black ;
+         
+        }
+        .parent:hover .tooltip{
+            /* display: block; */
+            visibility: visible;
+           
+        }
+
+    </style>
+</head>
+<body>
+   <button title="addtoshopingcart">Addtoshopingcart</button>
+   <button title="buyNow">buynow</button>
+    <div class="parent">
+        <button class="btn">Buynow</button>
+        <span class="tooltip">buyNow</span>
+    </div>
+</body>
+</html>

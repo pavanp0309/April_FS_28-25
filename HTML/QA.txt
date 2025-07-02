@@ -1,0 +1,14 @@
+1 ***write Difference b/w website and webpage ?
+2.***what are single page and multi page website ?
+3.what is Server ?
+4.what is url ?example 
+5.what is html?advantages and disadvatages
+6.features of HTML5
+
+1.**what is DOCTYPE in Html 
+2.what are text-formatting tags ?
+3.**what is an iframe ?
+4.**explain the Difference b/w tag and Element 
+5.**what are void element ?
+6.what are container an empty give some example
+7.***what are attributes ?

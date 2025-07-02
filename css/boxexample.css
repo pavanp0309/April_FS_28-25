@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-img-top{
+    width: 100%;
+}
+/* 1rem-16px */
+.card{
+    border: 2px solid red;
+    width: 250px;
+    height: 300px;
+    padding:1.5rem;
+    border-radius: 5px;
+    box-shadow: 3px 7px 5px rgba(134, 231, 238, 0.962);
+    margin:auto;
+    margin-top: 100px;
+}
+
+.btn{
+    padding: .36rem;
+    width: 100px;
+    border: none;
+    outline: 2px solid rgb(139, 242, 20);
+    border-radius: 25px;
+}

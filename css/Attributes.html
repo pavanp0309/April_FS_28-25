@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* if it matches the exact word */
+        p[class="para"]{
+            color: orangered;
+        }
+    /*  it styles the element that matches the value at end */
+         p[class$="para"]{
+            color: rgb(98, 255, 0);
+        }
+
+    /*  it styles the element that matches the value at start */
+          p[class^="para"]{
+            color: rgb(98, 255, 0);
+        }
+    /* it matches anywhere in the attribute value */
+        p[class*="para"]{
+            color: rgb(98, 255, 0);
+        }
+
+        /* h1[class="d"]{
+            color: red;
+        } */
+
+         h1[class$="d"]{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <p class="para">attribute -selector-1</p>
+    <p class="para para-one">attribute -selector-2</p>
+    <p class="para-two para">attribute -selector-3</p>
+    <p class="para para-two ">attribute -selector-3</p>
+    <p class="para-three para">attribute -selector-3</p>
+    <p class="dg para-three ">attribute -selector-3</p>
+    <p class="dg para-three ">attribute -selector-3</p>
+    <p class="dg pa para">attribute -selector-3</p>
+    <p class="dg pa para dm ">attribute -selector-3</p>
+    <p class="kjspara">attribute -selector-3</p> -->
+    <h1 class="d r d-g ">DOUBT</h1>
+</body>
+</html>

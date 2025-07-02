@@ -1,0 +1,107 @@
+/* Root - */
+:root{
+    --primary-color:rgb(85, 255, 0);
+    --secondary-color:gray;
+    --link-color:red;
+    --active-link-color:green;
+    --hover-link-color:rgb(198, 255, 192);
+    --text-decoration:none;
+    --bg-danger:red;
+    --padding-left:5px;
+    --margin:18px;
+    --font-weight:700;
+    --border:2px solid green;
+}
+
+
+
+
+a:link{
+    color:red;
+    margin: var(--margin);
+}
+a:visited{
+    color:var(--link-color)
+}
+a:hover{
+    color:var(--hover-link-color);
+}
+a:active{
+    color: green;
+}
+
+
+tr:nth-child(odd){
+    background-color: aqua;
+    
+}
+tr:nth-child(even){
+    background-color: var(--primary-color);
+}
+
+/* td:nth-child(2n){
+background-color: orangered;
+} */
+tr:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+li:first-child{
+    background-color: aquamarine;
+}
+
+li:last-child{
+    background-color: aquamarine;
+}
+li:nth-child(even){
+    color:var(--primary-color);
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: var(--margin);
+}
+
+/* form validation  */
+input:required{
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+}
+input:read-only{
+    border: 2px solid orange;
+}
+input:focus{
+    padding: 10px;
+    transition: all .5s linear;
+
+}
+/* for keyboard accessibility */
+input:focus-visible{ 
+    padding: 10px;
+    transition: all .5s linear;
+
+}
+button:disabled{
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+input:checked+label{
+    background-color: aqua;
+    border:2px solid red
+}
+
+.card:has(img):has(.gold){
+    background-color: aqua;
+}
+:is(a,button,h1,h3){
+
+}
+
+ul:has(a,button){
+
+}
+input[type="email"]:valid{
+    background-color: green;
+}

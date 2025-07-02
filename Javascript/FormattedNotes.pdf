@@ -1,0 +1,15 @@
+Day 1: Introduction to JavaScript
+
+JavaScript is:
+Prototype-based, object-oriented, single-threaded, interpreted (can also be JIT-compiled now).
+Dynamically typed & weakly typed.
+Used to build interactive, dynamic web apps.
+
+🎯 Real‑world uses:
+Validating user forms (signup, cart, checkout)
+Showing/hiding popups, alerts, tooltips
+Handling add‑to‑cart logic, counters
+Fetching weather/news/movies data via APIs
+Building dashboards (CRUD: create, read, update, delete)
+Search filters, drag‑drop UIs, live chats
+Even backend (Node.js + Express/Nest) and 3D apps (Three.js)

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internalcss -->
+<style>
+    /* universal selector */
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+        background-color: wheat;
+    }
+
+    /* id1 selctor-->#idvalue */
+    #id1{
+        background-color: rgb(255, 138, 127);
+        text-align: center;
+    }
+    #id2{
+        background-color: rgb(255, 127, 238);
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* class selector */
+    /* syntax: .classvalue */
+    .para{
+        background-color: aqua;
+    }
+    .para_1{
+        text-align: center;
+    }
+    .btn{
+        background-color: rgb(0, 38, 255);
+        color: aliceblue;
+        padding: 10px;
+    }
+    .btn-lg{
+        width: 150px;
+    }
+   /* tag selector */
+   div{
+     background-color: aqua;
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+   }
+
+   /* group selector */
+   div,.title,#text{
+    background-color: rgb(255, 0, 191);
+   }
+
+</style>
+</head>
+<body>
+    <!-- id selector: it is unique in entire document -->
+     <h1 id="id1">Id selcetor </h1>
+     <h1 id="id1">Id selcetor </h1>
+     <h1 id="id2">Id selcetor </h1>
+
+     <header>
+        <button class="btn">getStarted</button>
+     </header>
+
+     <!-- class selctor -->
+      <p class="para" id="id1">class selector</p>
+      <p class="para_1 para">class selector</p>
+      <p class="para para_1 para_2 ">class selector</p>
+      <p class="para">class selector</p>
+
+      <!-- tag selector -->
+       <div></div>
+       <div></div>
+       <section>
+            <h2 class="title">Heading...</h2>
+             <button class="btn btn-lg">getStarted</button>
+       </section>
+       <span id="text">text...</span>
+
+
+
+    
+</body>
+</html>

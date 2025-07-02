@@ -1,0 +1,14 @@
+Day_1
+1.what is Javascript?explain its useage in application
+2.write The difference single Threaded and synchrounous ?
+3.Difference between console.log(), alert(), and document.write()?
+4.What is the difference between var, let, and const?
+5.What is hoisting? Which variables get hoisted?
+6.what is Temporal_DeadZone?
+7.write The Difference b/w refference and type and syntax_errors in js
+8.explain the following Terminologies 
+      1.DECLARATION
+      2.redeclaration
+      3.INITIALIZATION
+9.what is scope ? explain types of scope in js?
+10.explain the Rules to write Variable Names ?

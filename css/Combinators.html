@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child selector (>) */
+        .parent>p{
+           color: rgb(255, 21, 0);
+        }
+
+        /* descendent selector (space)  (child+subchild)*/
+        .parent p{
+            color: blue;
+        }
+        /* adjacent sibiling selector (+) */
+        .parent+p{
+            color: aquamarine;
+        }
+
+        /* general sibiling selector (~) */
+        .parent~p{
+            color: rgb(255, 127, 221);
+        }
+    </style>
+</head>
+<body>
+    <!-- combinators : talks about the relationship betwen selectors -->
+     <div class="parent"><!-- parent element-->
+        <p>first child selector</p> <!-- child of div-->
+        <p>second child selector</p><!-- child of div-->
+        <section><!-- child of div-->
+            <p>third child but direct child</p><!-- child of section and descendent of div-->
+        </section>
+
+     </div>
+     <p>hello i sibiling👩‍🔬👨‍🔬</p> <!-- adjacent sibiling (immediately followed)-->
+     <p>hello i sibiling👩</p> <!-- general sibiling selector-->
+     <p>hello i sibiling👩👨</p>
+</body>
+</html>

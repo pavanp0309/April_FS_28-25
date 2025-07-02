@@ -1,0 +1,124 @@
+
+
+Javascript :
+is used for making application Dynamic 
+interactive with webpages/websites 
+
+Javascript is ProtoType Object Oriented programming language 
+single-Threaded and synchrounous,interpeted  language
+logical
+
+REALTIME EXAMPLES :
+🎯Popus & alerts & notifications
+🎯signupforms/registeration- form-validation
+🎯 addcart --clicking button -logic 
+🎯 messaging .. 
+🎯 fetching the data (weather deatials movies reels etc) 
+🎯 Create Read Update delete -CRUD
+🎯 calculations 
+🎯 searchfunctionality ,locations ,drag-drop functionality 
+
+Can Guess in How many days ? -10days-1995-ecma -1997-2025 -2015-es6 
+
+Js-Frameworks 
+vue js 
+expressjs--nodejs
+angular
+3js 
+nest js
+next js
+redux
+react-libray
+
+
+
+
+Javascript PRINITING STATEMENTS 
+1.document.write()
+2.console.log()
+3.alert()
+4.innerHtml or innerText
+
+DIfferent ways to Links/add Js To Html 
+
+inline js
+internal js
+external js
+
+
+DAY_2 
+Variables & its Terminolgies 
+
+Variables :Variables are nothing but conatiner which stores the Different types of datatypes
+
+datatypes : nothing but the Values  like string("",'',``) ,number,boolean,
+object :{},arrays :[] functions etc ...
+ primtive 
+ non-primtive
+
+RealTime examples 
+storing the Number ,prices ,total value of cart ,
+login information 
+student list:[{}]
+eccomerce apps -for storing the Products data 
+
+
+Identifiers :(variable or functions name ,class name etc..)
+Rules of writing the Variable Names or Identifiers 
+1.varaibale name shouldnot contain white spaces and special character except $ and _ 
+  eg : * & () % # @ ----> not acceptable 
+  eg:$ _ is acceptable
+2.it shouldnot any reserved(predefined ) keywords 
+    eg: var let const  function if else for while class --- not acceptable
+3.It shouldnot start with Number 
+    eg: 5hello   --->wrong way
+    eg: hello5   --->wrong 
+    
+Dynamically typed 
+var a=10          ---> number
+var a="hello"    --->string
+var a=true    --->boolean
+
+Casesentive 
+ var b=10 ---->#30
+ var B=12 ---->#31
+ console.log(b) //10
+
+
+ Terminolgies 
+
+ DECLARATION : creation of variable or function or class 
+   eg: var a
+     var ---> variable
+     a----> Identifier
+ RE-DECLARATION :creation of varaibale with same name in same SCOPE
+          eg: var a
+              var a    ----> redeclared varaible 
+ INITIALIZATION :assigning a value to a variable  
+           var a=10 ----> INITIALIZATION
+ SCOPE : lifetime of varaible (upto where and when we can access)
+   Types of scope 
+    global scope ---> can be accessed everywhere within the code 
+    local-scope :
+          Block-scope ---> {}
+          function-scope ---> function data{}
+          Module-scope ---> file based 
+ HOISTING : Moving all DECLARATION to top of there scope is known as HOISTING
+
+
+ DIfferent ways to  declare Variables 
+ 1.using var ------>1995 
+ 2.using let          --->2015
+ 3.using const          --->2015
+ 4.using nothing 
+
+
+
+DAY_2
+datatypes :are values 
+primtive : these are lowest level of language implementation and they are immutable(cant change the values)
+ string ,number ,boolean,null undefined ,bigint(es6+) symbol etc..
+eg:hello 
+non-primtive: object  arrays ,functions 
+
+

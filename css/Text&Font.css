@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+body{
+    /* text-transform: uppercase; */
+}
+p{
+    color:red;
+    text-align: center; /* center start end justify */
+    text-decoration-line: underline;
+    text-decoration-line: overline;
+    text-decoration-line: line-through;
+    text-decoration-line:underline overline line-through ;
+    text-decoration-style: double; /* double dotted dashed solid ,grooved etc */
+    text-decoration-style: double ; /* double dotted dashed solid ,grooved etc */
+    text-decoration-color: green;
+    text-decoration-thickness:2px ;
+    text-decoration: double line-through 2px gold; /*shorthand property*/
+
+    text-transform: capitalize; /* only starting letter will be capital */
+    text-transform: lowercase; /* makes all letter to lowercase */
+    text-transform:uppercase; /* makes all letter to uppercase */
+    text-transform: none;
+    text-transform: inherit; /* intial has default style of an element but inherits extracts the prroperties from its parent */
+    text-shadow:10px 10px 5px  rgb(0, 225, 255) ;
+    letter-spacing: 5px;
+}
+
+h4{
+ text-indent:2rem;
+ line-height:20px ;
+ word-spacing: 10px;
+ letter-spacing: 2px;
+ 
+ 
+ 
+ 
+}
+
+/* realtime usecase */
+a{
+    text-decoration: none;
+}
+
+/* font Properties */
+ /* choosing the Right font will increase the BrandVisibity */
+
+ h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif ;/* has strokes at edges */
+    font-family:'Courier New', Courier, monospace;
+    font-family:cursive;
+    font-family: fantasy;
+    /* google fonts */
+      font-family: "Playwrite HU", cursive;
+      /* size  */
+      font-size: 10px;
+      font-size: 1.2rem;
+      /* weight */
+      font-weight: lighter;
+      font-weight:bold;
+      /* style */
+      font-style: italic;
+      font-style: normal;
+      font-style: oblique;
+      /* variant */
+      font-variant: small-caps;
+
+      /* shorthand prop */
+      font:2rem  bold "Playwrite HU", cursive ;
+ }
+
+ /* colors  */
+ /* default colors  */
+ h4{
+    color:orangered;
+
+    /* hexa decimal colors-00(0-9)-ff(a-f) value of f-255 */
+    /* syntax: #00ff --#colorcode; */
+    color:#000000;
+    color:#000;
+    color:#ffffff;
+    color:#fff;
+    color:#013f4d;
+    color:#333fff;
+
+    /* rgb and rgba (red(0-255) green(0-255) blue(0-255) a-(0-.9999 */
+    color: rgb(255,0, 0);
+    color: rgb(0,255, 0);
+    color: rgb(0,0, 255);
+    color: rgb(255,255, 255);
+    color: rgb(0,0,0);
+    color: rgba(232, 60, 13, 0.925);
+
+    /* hsl(hue(0-360deg) saturation(0-100%) ,lightness(0-100%) and hsla */
+    color: hsl(0deg, 100%,50%);
+    color: hsl(120deg, 100%,50%);
+    color: hsl(250deg, 100%,50%);
+    color: hsl(300deg, 100%,50%);
+    color: hsla(36, 88%, 43%, 0.55);
+
+    /* flatuicolors */
+    color: #2ecc71;
+    color: rgba(155, 89, 182,1.0);
+
+    /* combination of morethan one color */
+    /* linear-gradient and conical gradient or radial gradient */
+    /* these properties will work only with  background and background image prop */
+    /* color: linear-gradient(red ,green,yellow); * -- wont work */
+    /* background:  linear-gradient(red ,green,yellow);  */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent;
+    background-clip: text; */
+
+
+
+ }
+ h1{
+        background: url('./assets/jack.jpg');
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+ }

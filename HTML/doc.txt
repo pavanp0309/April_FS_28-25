@@ -1,0 +1,101 @@
+HTML: HYPERTEXT MARKUP LANGUAGE
+HYPERTEXT:The text which links two or more webpages with hyperlinks
+MARKUP :collection of tags (it is used for formatting the document)
+  eg: images paragraph ,heading audio 
+
+USECASE : it is used for structuring /building the skeleton/layout of the webpage or website ;
+
+Current version : HTML5
+
+HTML5 features  
+     1.it supports multimedia tags :images audio video iframes(webpage in webpage)
+     2.form enhancements : url ,color,range ,date-types: date-time date-time-local month time file  etc..
+     3.semantic Tags (gives clear meaning to browser) header footer nav sidenav section figure article
+     4.svg (scalble vector graphics) : graphics ,geometrical shapes: circle square line ellipse ,icons
+      & canvas 
+    5.web_apis :cookies localstorage ,session storage  geolocation;
+    6.entities: special symbols or characters &#87542; -emoji &copy;
+
+Tag : represents/tells what type of content we are presenting/rendering : h1 p img audio
+   container tags : a tags along with opening and closing angular brackets with some content inside it 
+        eg: <p>these demo</p>
+   empty tags (void element) : which doesnt contain any content inside it  
+       eg: <hr/>
+Element : a tag along with some content inside it 
+
+
+<!DOCTYPE html>  : tells/represents the current version of Html 
+                  current version Html5
+
+comments in html 
+<!-- comments here -->
+usecases: used for code-readiablity,maintainable;
+
+ATTRIBUTES :which gives additional information to a tag or element 
+ eg: src width height  alt target id class type align etc...
+
+LINKS 
+ tag: a 
+ <a href='' target='' >clickme</a>
+ usecases:navlinks ,clickable cards ,footers  etc..
+
+ paragraph
+ usecases
+ ATTRIBUTES 
+ links
+ usecases
+ absolute and realtive url 
+
+
+List In Html 
+USECASE : Navbar footers ,Menu ,ranking ,cards ,instructions,notes ,notification etc..
+Different types of List
+🎯Ul: unordered list(ul)
+🎯ol: ordered list(ol)
+🎯dl: description list(dl)
+
+li: list item 
+dt: description term
+dd: description data
+
+
+multimedia : images audio videos iframes ;
+images : jpg ,png jpeg webp gif,Svg images etc..
+audio: mp3 mp2  WAV, AAC, and FLAC
+videos: mp4 3gp ,AVI, MOV, WMV, and MKV 
+
+
+FORMS :used for collecting the user Data (name ,email,password,age,gender,educational doc)
+usecase:login,register,contact,booking system , job application ,contact book,reviews  ,searchbar
+
+Form-Elements: are used to build the Structure of the Forms  (input,select,textarea,button etc)
+eg: lable input select option datalist  textarea button optgrouph fieldset legend
+
+Form_controls: are used to controll the form-element :(it tells what to enter into the form field )
+eg:maxlength,max min ,required,disabled ,readonly size ,type="email,password,tel ,radio "
+
+Tables :
+USECASE :comparision ,rankingsystem ,products ,website layouts ,timetables
+
+TableElement :
+ table 
+ tr: table row
+ th: table header
+ td: table data 
+ thead
+ tbody
+ tfoot 
+ colgrouph
+ col 
+ legend
+
+
+
+ Table ATTRIBUTES 
+ width ,bgcolor style, 
+ cellpadding(space around the content)
+ cellspacing: the space around the table cell 
+ rowspan
+ colspan
+ align
+

@@ -1,0 +1,67 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+/* parent element */
+.layout{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows: 100px 200px 200px 100px 100px;
+  gap: 5px;
+  grid-template-areas:
+  "a a a a"
+  "b c d d"
+  "b e e f"
+  "b g h i"
+  "b j j j"
+  ;
+}
+/* .child  common styles */
+.child{
+    background-color: gold;
+    padding: 2rem;
+    border: 2px solid red;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.child-1{
+    grid-area: a;
+}
+.child-2{
+     grid-area: b;
+}
+.child-3{
+     grid-area: c;
+     background-image: url(./assets/3.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.child-3:hover{
+   transform: rotate(15deg) scale(.56);
+}
+.child-4{
+     grid-area: d;
+     background-image: url(./assets/2.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center center;
+}
+.child-5{
+     grid-area: e;
+}
+.child-6{
+     grid-area: f;
+}
+.child-7{
+     grid-area: g;
+}
+.child-8{
+     grid-area: h;
+}
+.child-9{
+     grid-area: i;
+}
+.child-10{
+     grid-area: j;
+}

@@ -1,0 +1,70 @@
+DAY_1
+1.what is CSS ?write advantages 
+2.explain the new features of CSS3 
+3.explian  different ways to include css to html 
+4***.what is selector? types of selector  
+5.what are comments in css & its advantages
+
+DAY_2
+6.explain the difference b/w id & class selector
+7.explain all simple selector
+8.explain combinator selector 
+9.explain the difference b/w inline internal and external css with advantages ?
+10.explain box-model in css ?
+
+Day-3 
+11**.explain Box-model ? its addvantages ?
+12.explain the difference b/w padding and margin property ?
+13.explain the border properties in css ?
+14**.explain the difference b/w box-sizing: content-box | border-box 
+15.explain the box-shadow property ?
+16.explain how to Calculate the total height and width of the Box ?
+
+Day-4
+17.explain the uses and advantages of Position properties in css ?
+18.explian the difference b/w position:absolute and position:realtive 
+19.explain the difference b/w position:sticky and position:fixed;
+20.explain the zindex property
+
+Day-5
+21.explain the type of colors in css ?
+22.explain font front properties in css ?
+23.explain the text-properties in css? 
+24.explain how to apply the background-image to a text ?
+
+Day-6
+25.explain the background-properties?
+26.explain the difference b/w background-clip and background-origin
+27.explain the difference b/w background-attachement and background-position 
+28 explain the background-blend-mode property
+29 explain the backdrop-filter  property 
+
+Day-7
+30.explain the concept of flex-box in css 
+31.explain the difference b/w align-items and align-content 
+32.explain the difference b/w justify-content and align-content
+33.explain the difference b/w flex-basis and flex-shrink and flex-grow 
+
+Day_8
+34.explain the difference b/w transition and transformations 
+35.explain the difference b/w transition-timing-function:linear | ease |ease-in |ease-in-out 
+36.explain the difference b/w transformation:rotate and skew property 
+
+Day_9 
+37. explain animation-fill-mode  property ?
+38.explain the difference b/w animation and transition ?
+39.explain the difference animation-timing-function and animation-itteration-count ?
+40.what are @keyframes ?why we use it 
+
+Day_10 
+41.explain the difference b/w grid and flex 
+42.explain all grid properties ?
+43.explain the difference b/w pesudo class and pesudo-elements 
+44.explain before and after pesudo-elements 
+45.explain the all form-pesudo_class
+46.explain the root pesudo_class 
+
+
+
+
+

@@ -1,0 +1,377 @@
+CSS : CASCADING STYLESHEET 
+CASCADING : set of rules(appliying color,width,height,alignment,responsiveness) applied to an html element 
+
+used for styling the html elements 
+
+Current Version CSS3 
+
+Latest features of CSS3 
+1.flex-box : used for creating 1D layout (either in row or columns direction)(navbar footer cards layouts)
+2.GRid : used for creating 2d layouts  (both in row and column direction )-image gallery ,website layouts admindashboard ,newspaper layouts 
+3.animations(contineous moment like spinner ,web scrolling effects) and transitions(hover effects) and transformations(rotation sclae skew etc..)
+4.varibales 
+5.advanced selectors 
+     1.pesudo-class (link active ,hover,focus,nth-child) 2.pesudo-element (selection,marker,placeholder,before after) selectors
+     3.attribute selectors  etc ..
+6.filters ,counters etc ...
+
+🎯DIFFERENT WAYS TO INCLUDE CSS TO HTML  
+1.inline css  
+2.internal css
+3.external css 
+
+1.inline css   : style="color:red"
+
+2.internal css
+<style>
+selector{
+    property:value;
+
+}
+</style>
+3.external css 
+selector{
+    property:value;
+
+}
+
+comments in css  
+/* comments here */
+
+
+
+selector: which is used to select an element either through attributes or tag names 
+🎯DIFFERENT TYPES OF SELECTORS 
+1.simple selector : id(#id1) class(.value) ,groupselctor ,tag/element(type selector) universal selector(*)
+2.combinator selector 
+   1.child selector  (>)
+   2.descendent selectors (space )
+   3. general silbiling selector  (~)
+   4.adjancent silbiling selector (+)
+3.pesudo class selector  :(based on element state) hover focus selected required  readonly nth-child checked link active disabled etc...
+4.pesudo-element :(on specific parts only) first-letter first-line placeholder ,marker ,selection etc ..
+5.Attribute selector
+
+
+Day-3 
+Box-Model: 
+Every html elements is considered as rect box 
+Box-model describes how to layout (ensure proper sizes and space for an element) in the browser
+
+main 4 pillar of box-model
+ 1.content : p h1-h6 img audio etc 
+ 2.padding: the space around the content we call it has padding 
+        padding-top padding-bottom padding-left padding-right 
+3. border  :  its is line around the padding   
+         border-color  border-style ,border-width  
+4.margin : the space around(outside) the border  
+       margin-top margin-bottom margin-left margin-right 
+
+
+UseCases: 
+ 1.alignment  sizing  spacing
+ 2.responsive design 
+ 3.designing weblayouts 
+
+
+Calculating the Total width of a element 
+Total-width=width+padding-right +padding-left +border-right +border-left 
+Total-height=height+padding-top +padding-bottom +border-top +border-bottom 
+
+
+Position Properties
+ every element in a document flow from left to right  and top to bottom to override these we use position properties 
+
+ position prop are used for layouting overlapping  ,alignment  etc  in the documnet 
+
+ we use (Top left right bottom)-offset values  are used for alignment /positioning the element 
+
+ Types of Position Properties 
+ 1.static (default)
+     it has normal document flow(left-right top-bottom)
+     offset values like top left bottom right has no effects on position static 
+     zindex propertyy doesnt work on position static
+
+ 2.realtive
+    it also fallows the normal document flow 
+    when applied with offset values like top bottom left and right elememt can moved here 
+    position realitive to the previous element if there is no previous element it moves realtive to the root element(html)
+ 3.absolute
+      it comes out of normal documnet flow 
+      and moves the element from root(html) until unless its parent element is applied with position like realtive absolute fixed
+ 4.fixed  :
+      it comes out of normal documnet flow 
+      and element gets fixed even when the content in webpage is scrolled
+ 5.sticky
+       it comes out of normal documnet flow  and behaves like realtive and fixed
+
+
+Usecases : 
+dropdowns  and tooltips ,
+floating buttons 
+form fileds with icons placed 
+model(popups)
+blogs 
+sticky navbars
+fixed footer and navbar
+
+
+
+Day-5 
+ TEXT_PROPERTIES
+ FONT_PROPERTIES
+  fontfamily : 
+    sans-serif
+    serif 
+    monospace
+    cursive
+    fantasy
+ COLORS (hex ,hsl,hsla ,rgb&rgba) & 
+
+
+ Day-6
+ LINEARGRADIENT & CONICAL GRADIENT AND READIAL GRADIENTS
+ background-properties 
+ examples 
+ QA
+
+
+ Day-7
+ What is Flexbox and Its Properties
+ where we use it and examples 
+ QA
+
+PROBLEMS BEFORE Flexbox 
+alignment (vertical centering..)
+displaying block level element next each other 
+ordering (Custom ordering )
+layouts 
+responsive
+
+ Flexbox : flex is used for developing 1d layouts (either in a row or column direction)
+ PROBLEMS solved with Flexbox
+  1.alignment (vertical centering)
+  2.Custom ordering 
+  3.displaying items in a row 
+
+its Usages and examples 
+1.card-layout  (product-cards ,profile-cards etc..)
+2.navbar and footer section 
+3.weblayouts 
+4.menu section like sidebar 
+5.image-gallery ,hero-section  etc ..
+
+
+display : block  | inline |inline-block  |flex | grid etc..
+Flexbox Properties 
+display :flex (default) when we use flex 
+
+parent Properties 
+🎯flex-direction: row (default) | row-reverse | column |column-reverse 
+🎯flex-wrap :wrap |no-wrap 
+🎯flex-flow :flex-direction |flex-wrap 
+🎯justify-content:start |end|center |space-between |space-around |space-evenly
+▶▶note: (works in horizontal direction when flex-direction is row and works vertical direction when flex-direction is column)
+🎯align-items :start | end |center |stretch |baseline 
+🎯align-content : start |end|center |space-between |space-around |space-evenly |baseline |stretch
+▶▶note: (works in vertical direction when flex-direction is row and works column direction when flex-direction is column)
+▶▶**it works only when flex-wrap:wrap **
+
+
+
+CHILD Properties 
+1.order 
+2.flex-grow
+3.flex-shrink
+4.flex-basis
+5.flex: flex-grow | flex-shrink | flex-basis 
+6.align-self : center |start  |end |stretch |baseline 
+
+
+Day-9
+TRANSITIONS AND TRANSFORMATIONS  
+
+TRANSITIONS
+TRANSITIONS_PROPRTIES
+1.transition-property:background ,color width (what the value that req to be changed  when we hover on a elment)
+2.transition-duration :time (2s 3s)
+3.transition-delay :time (2s 3s)
+4.transition-timing-function :linear | ease-in | ease-out |ease-in-out | cubic-brezier
+
+
+Day-10
+animations 
+animations& transition and transformations
+examples 
+Qa 
+
+
+ANIMATION Properties
+animation-name 
+animation-duration
+animation-delay
+animation-timing-function
+animation-itteration-count 
+animation-fill-mode 
+animation-direction
+
+@keyframes identifier{
+    0%{
+
+    }20%{
+
+    }50%{
+
+    }100%{
+
+    }
+}
+@keyframes identifier{
+    from{
+
+    }to{
+        
+    }
+}
+
+Day-11
+ GRID_SYSTEM  
+ examples 
+ Qa
+
+
+ GRID_SYSTEM : it is used for developing 2d(both row & column simulteneoulsy) layouts 
+  UseCases 
+     admindashboard
+     newspaper layouts 
+     image-Gallerys
+     weblayouts 
+     cards 
+
+Grid_parent Properties
+1.display :grid 
+
+🎯grid-template-column:|px| % |auto|rem |repeat()
+🎯grid-template-rows:|px| % |auto|rem |repeat()
+🎯justify-content : space-around |space-between |space-evenly |center |start |end 
+🎯align-content : space-around |space-between |space-evenly |center |start |end 
+🎯place-content : justify-content |align-content --->shorthand
+🎯align-items: start |end | center  |stretch |baseline
+🎯justify-items: start |end | center  |stretch |baseline
+      place-items: center end; /* 1.align-items 2.justify-items */
+🎯place-items: justify-items | align-items  --->shorthand
+🎯grid-column-gap : px |rem (avoid using it)
+🎯grid-row-gap :px |rem
+  column-gap:12px ; (use instead)
+  row-gap: 10px;
+🎯grid-gap : grid-column-gap |grid-row-gap
+🎯gap :grid-column-gap |grid-row-gap
+ gap: 2px 15px; /* 1-rowgap 2.colum-gap*/
+🎯grid-template-areas :
+
+
+
+CHILD_PROPERTIES 
+🐥grid-colum-start: 
+🐥grid-colum-end :
+🐥grid-colum: (shorthand)
+🐥grid-row-start: 
+🐥grid-row:(shorthand)
+🐥grid-area : grid-colum /grid-row 
+🐥align-self  : start |center |end |baseline
+🐥justify-self :start |center |end |baseline
+🐥place-self : align-self | justify-self 
+
+
+Day_12
+pesudoElements 
+
+pesudo: imaginary state of element
+pesudoElements : are used to style specific parts of element in a webpage
+ syntax: ::pesudo-element
+::first-letter
+::first-line
+::selection
+:: placeholder
+:: marker
+
+
+
+pesudo-Class  : it is special-state of an element which is used for styling
+ based userInteraction,formstates hover etc.. 
+
+ EG:
+ HOVER -- Button a,div section layout  etc all elements
+ active visited ,link etc --- a,buttons
+ nth-child first-child last-child : (stripped tables listitems )
+ active reaquired readonly disabled  checked  : forms
+ root : default styles 
+ not   etc...condtitional based (for media queries )
+
+ syntax: 
+ selector:pesudo-class {
+    code....
+ }
+
+
+Media Queries are used for applying styles conditionaly based on Type of 
+screen (all,screen,print etc.) orientation(landscape or potrait),width ,height 
+
+ADVANTAGES 
+responsiveness (RWD-responsive WEB DESIGN )
+display different content on different screen 
+user friendly application 
+
+syntax
+Min-width:start-point
+Max-width:end-point
+
+@media typemedia (min/max-width(px)){
+    selector{
+        styles 
+    }
+}
+
+@media typemedia (min-width:(px)) and (max-width:px){
+    selector{
+        styles 
+    }
+}
+@media typemedia (min/max-width(px))and (orientation:landscape){
+    selector{
+        styles 
+    }
+}
+
+@media typemedia (min/max-width(px)) , (orientation:landscape){
+    selector{
+        styles 
+    }
+}
+
+@media typemedia (width<=300 and width>=500){
+    selector{
+        styles 
+    }
+}
+
+xs: xtra-small screen (<=576px)
+sm: small screen (>=576px)
+md: medium screen (>=768px)
+lg: large screen (>=992px)
+xl: xtra large screen (>=1200px)
+xXl: xtra xtra large screen (>=1400px)
+
+
+
+Attribute selector  :
+Attribute :which gives additional information to an element or tag 
+FormAttributes : for name placeholder ,id ,type ,select method action readonly required ,min max disabled etc..
+table Attributes :  colspan rowspan border cellpadding cellspacing style align bgcolor width height
+list Attributes : type order start style  etc...
+general attribute id class target href src etc...
+
+Syntax :
+a[target="_blank"]
+input[type="text"]{}
+p[class="para"]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1{
+       width: 200px;
+       border: 2px solid red;
+       background-color: aqua;
+       height: 100px;
+       /* transition-property: background-color width; */
+       transition-property: all;
+       transition-duration: 5s;
+       background-image: url('./assets/1.jpg');
+       /* transition-delay: 2s; */
+       transition-timing-function:cubic-bezier(0.6, 1.85, 0.16, -1.55);;
+       transition: all 2s linear;
+    }
+    h1:hover{
+        background-color: red;
+        width: 300px;
+        height: 200px;
+        background-image: url('./assets/3.jpg');
+    }
+    </style>
+</head>
+<body>
+    <h1 >hello</h1>
+   
+</body>
+</html>

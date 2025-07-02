@@ -1,0 +1,91 @@
+.bg{
+    width: 250px;
+    height: 300px;
+    border: 2px solid red;
+    /* we can apply default color(like red green blue ) rgb rgba hsl and hsla hexa-decimal */
+   
+    background-color: aqua; /* default color */
+    background-color:#a4df; /* hexadecimal color */
+    background-color:rgb(250, 100,150); /* hexadecimal color */
+    background-color:hsl(120deg, 100%,30%); /* hexadecimal color */
+
+    /* background image Property--we can apply colors(linear or conical radial) and images */
+    /* combination of morethan one color  */
+    background-image:linear-gradient(red,blue) ;
+    background-image:linear-gradient(red 50%,blue 10%,pink 40%) ;
+    background-image:linear-gradient(rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(to right,rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(to left,rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(to bottom,rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(to top,rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(90deg,rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(45deg,rgb(100,250,170),rgb(200,170,220)) ;
+    background-image:linear-gradient(15deg,rgb(18, 224, 114),rgb(214, 80, 185)) ;
+    background-image: radial-gradient(red ,blue);
+    background-image: radial-gradient(red 10% ,blue 90%);
+    background-image: radial-gradient(red 10% ,blue 90%);
+    background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e2c165&c2=981d57&gt=c&gd=dtt
+*/
+background: #E2C165;
+background: conic-gradient(from 0deg, #E2C165, #981D57);
+
+background-image: url('./assets/2.jpg');
+/* repeat reapeat-x repeat-y no-repeat */
+background-repeat:no-repeat ;
+background-repeat:repeat ;
+background-repeat:repeat-x ;
+background-repeat:repeat-y ;
+background-repeat:no-repeat ;
+
+/* Size of background  */
+/* background-size: 20px; */
+background-size: cover; /* fits the container without cropping */
+background-size: contain; /*fits the container without cropping */
+/* background-size: 100px; */
+/* background-size: 100%; */
+background-size: contain;
+/* position of images  center left right top bottom or px (sizes) */
+/* background-position: center;
+background-position: left ;
+background-position: right;
+background-position: top;
+background-position: top left;
+background-position: bottom left;
+background-position: center left; */
+/* background-position: 10px 100px; 10px-horizontal 100px-vertical */
+
+/* attachment */
+/* background-attachment: fixed; */
+/* background-attachment: scroll; */
+
+
+}
+
+#id1{
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    /* padding: 50px; */
+    /* background-image:url('./assets/3.jpg'),linear-gradient(red,rgb(33, 231, 185)) ; */
+    
+    /* background-repeat: no-repeat; */
+    /* background-size: contain;
+    background-blend-mode:color-burn ; */
+    /* background-image: url("./assets/2.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    /* background-clip:content-box ; */
+    /* background-origin:border-box ; */
+    background-image: url('./assets/2.jpg'),url("./assets/3.jpg");
+    background-repeat: no-repeat repeat;
+    background-size:100px;
+    backdrop-filter:blur(10px);
+  
+
+
+}

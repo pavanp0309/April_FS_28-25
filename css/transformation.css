@@ -1,0 +1,35 @@
+
+
+img{
+    width: 100%;
+    height: 150px;
+}
+.cards{
+    display: flex;
+    justify-content:center;
+}
+
+.card{
+    width: 200px;
+    border:2px solid green;
+    padding: .56rem;
+    transform: rotate(45deg) translate(100px,100px);
+    /* transition: all 2s linear ; */
+}
+
+.card:hover{
+  /* transform: translateX(100px);
+  transform: translateY(100px);
+  transform: translate(100px, 100px); */
+  /* transform: rotateX(180deg);
+  transform: rotateY(180deg);
+  transform: rotate(45deg); */
+  /* transform: scaleX(2);
+  transform: scaleY(1.5);
+  transform: scale(.95); */
+  /* transform: skewX(45deg);
+  transform: skewY(45deg);
+  transform: skew(45deg,20deg);
+  transform: skew(45deg); */
+  /* transform: translate(100px, 100px) rotate(190deg) skew(45deg) scale(1.25); */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu-section{
+            position: relative;
+        }
+        /* button style */
+        .menu-btn{
+            padding: 5px 20px;
+            background-color: aqua;
+            border: none;    
+        }
+        /* drop-down */
+        .drop-down{
+            background-color: aliceblue;
+            width: 120px;
+            padding: .45rem;
+            position: absolute;
+            top: 15px;
+            left: 73px;
+           
+            display: none;
+        }
+
+        /* drop-down menu-items */
+        .drop-down a {
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+
+         .drop-down a:hover {
+           background-color: rgb(226, 173, 154);
+           border-radius: 10px;
+        }
+        /* to show the menu when we hover */
+        .menu-section:hover .drop-down{
+            display: block;
+        }
+
+        /* subDropDown */
+        .sub-dropdown{
+         position: relative;
+        }
+        .sub-dropdown-links{
+            background-color: rgb(53, 134, 206);
+            width: 120px;
+            padding: .45rem;
+            position: absolute;
+            top:10px ;
+            left: 120px;
+            display: none;
+        }
+        .sub-dropdown:hover .sub-dropdown-links{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="menu-section">
+        <button class="menu-btn">Menu</button>
+        <!-- main menu -->
+        <div class="drop-down">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <!-- these submenu section (menu inside menu) -->
+            <div class="sub-dropdown">
+                <a href="">Settings ▶</a>
+                <div class="sub-dropdown-links">
+                    <a href="">update</a>
+                    <a href="">Themes</a>
+                    <a href="">backup</a>
+                </div>
+                 
+            </div>
+            <!-- logout -->
+           <a href="">logout</a>
+        </div>
+    </div>
+</body>
+</html>
