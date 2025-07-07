@@ -122,3 +122,18 @@ eg:hello
 non-primtive: object  arrays ,functions 
 
 
+Day_3 
+CONDITIONAL STATEMENTS
+1.if-STATEMENT
+2.if-else 
+3.else-if ladder 
+4.nested if
+5.switch case 
+
+
+UseCases :
+ authentications : login otp email etc..
+ grading system
+ menu -food delivary apps 
+ dropdowns 
+ role-based dashboards 
