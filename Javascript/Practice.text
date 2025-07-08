@@ -1,0 +1,116 @@
+// write a js Program to check the Given Number is  odd  or even
+
+// something that is Divide by 2==>(n%2)
+// 4%2==>0--even
+// 3%2==>1--odd
+function EvenorOdd(n){
+    if(n%2!==0){
+        console.log("odd number")
+    }else{
+        console.log("even Number")
+    }
+}
+EvenorOdd(4)
+EvenorOdd(3)
+
+// write a js Program to check the Given Number is  odd  and divisible by 5
+function oddDiv5(num){
+    if(num%2!==0){ // checks given number is odd
+        if(num%5==0){ //checks given number is div by 5
+            console.log("given number is Odd and divisible by 5")
+        }else{
+            console.log("given number is odd not divisible 5")
+        }
+    }else{
+        console.log("given number is not odd")
+    }
+}
+// write a js Program to check the Given Number is  even  and divisible by 10
+// divisible by 5
+function oddDiv5(num){
+    if(num%2==0){ // checks given number is even
+        if(num%10==0){ //checks given number is div by 5
+            console.log("given number is Odd and divisible by 5")
+        }else{
+            console.log("given number is odd not divisible 5")
+        }
+    }else{
+        console.log("given number is not odd")
+    }
+}
+// write a js Program to check the user is eligible for driving linces 
+
+//   conditions: 
+//      he should be India and age be greater than 18 and i must a    graduate
+
+function drivingLchecker(age,n,d){
+    if(age>=18 && n=="indian" && d){
+        console.log("eligible")
+    }else{
+         console.log("not eligible")
+    }
+    
+}
+
+drivingLchecker(10,"indian",true)
+// params : age:10 n=indian d=true
+
+// 5.write a js Program to stimualate the traffic singnals
+        //  red--stop the vechicle
+        //  yellow-ready to go 
+        //  green -> gooo ...
+        
+
+// write a function check the Given Number is Positive negative  or zero 
+// write a function that check greatest among three number
+// write a function the prints the Discounts for the Following conditions
+//     1.user is primemember and purchuse amount >500 --> 20% 
+//     2.not a prime member and purchuse amount >1000 --> 15% 
+//     3.<500 and not prime user provide no -discount available
+
+
+// write a function the outputs stages of life 
+//         age <=15 ---child
+//         age 15-25  ---teenager
+//         age 25-50  ---adult
+//         age 50-100  ---old
+// write a function the Prints The discounts based on the payment methods
+//      creditcard---> 15% 
+//      upi payment -->10%
+//      wallet --> 5% 
+//      cashondelivery---no discount ---else-if
+    
+
+
+
+function printdiscounts(isprime,pamount){
+     if(isprime && pamount>500){
+         console.log("20% discount available")
+     }else if(!isprime && pamount>1000){
+         console.log("15% discount available")
+     }else{
+         console.log("no discount available")
+     }
+}
+
+printdiscounts(true,1000)
+printdiscounts(false,1000)
+printdiscounts(false,1001)
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        

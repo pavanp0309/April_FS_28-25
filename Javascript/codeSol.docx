@@ -1,0 +1,45 @@
+// ...existing code...
+
+// 1. Check greatest among three numbers
+function greatestOfThree(a, b, c) {
+  if (a >= b && a >= c) {
+    console.log(`${a} is the greatest`);
+  } else if (b >= a && b >= c) {
+    console.log(`${b} is the greatest`);
+  } else {
+    console.log(`${c} is the greatest`);
+  }
+}
+// greatestOfThree(10, 20, 15);
+
+// 2. Check whether given year is leap year or not
+function isLeapYear(year) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        console.log(`${year} is a leap year`);
+      } else {
+        console.log(`${year} is not a leap year`);
+      }
+    } else {
+      console.log(`${year} is a leap year`);
+    }
+  } else {
+    console.log(`${year} is not a leap year`);
+  }
+}
+// isLeapYear(2020);
+// isLeapYear(1900);
+// isLeapYear(2000);
+
+// 3. FizzBuzz
+function fizzBuzz(num) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (num % 3 === 0) {
+    console.log("Fizz");
+  } else if (num % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(num);
+  }
