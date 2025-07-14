@@ -12,3 +12,17 @@ Day_1
       3.INITIALIZATION
 9.what is scope ? explain types of scope in js?
 10.explain the Rules to write Variable Names ?
+
+Day_2
+What is a function? Why do we use functions?
+What is the difference between a function declaration and a function expression?
+What is a return value? What happens if you don’t return anything?
+What is the difference between parameters and arguments?
+What is a default parameter? Give an example.
+What are arrow functions? How are they different from regular functions?
+What is a callback function? Give an example.
+What is hoisting and how does it affect functions?
+Explain the difference between:1.Named function 2.Anonymous function 3.Arrow function
+Explain IIFE (Immediately Invoked Function Expression). Why and where would you use it?
+What is the difference between rest parameters (...args) and the arguments object?
+
