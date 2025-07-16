@@ -137,3 +137,28 @@ UseCases :
  menu -food delivary apps 
  dropdowns 
  role-based dashboards 
+
+
+
+ STRINGS 
+
+ UseCases
+  searchfunctionality : it converts uppercase to lowercase and finds the data 
+  removing the white space from the text 
+  in payment application padding the numbers symbols
+  displaying the mimum product info like slicing the text 
+
+  Terminolgies 
+  immutable : cant change the Value once created
+  primtive :it is lowest level of language implementation where it doesnt have any methods
+  note:js converts primitive strings into non-primitive string objects so what ever methods available on non-primitive is also available on primitive types
+  let a=ramu
+  let a=rju
+  Reference types: objects 
+  let a={
+    name: "raju
+  }
+  object 
+
+ 
+ 

@@ -309,3 +309,16 @@ addtocart()
 // payment 
 // filling the card details 
 
+
+
+ let example={
+    name:"ramu" ,//property : value:string
+    details:function(){
+      console.log(this.name.toUpperCase())
+    } // prop:details value: function
+  }
+  console.log(example.name)
+  console.log(example.details())
+
+  let a=new String("hello")
+  console.log( a)
