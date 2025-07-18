@@ -153,13 +153,68 @@
 
 // indexof
 // indexOf(searchString: string, position?: number): number 
-let findme="i a am dev am k"
-console.log(findme.indexOf())// -1
-console.log(findme.indexOf("py"))// -1 (if no substring is found)
-console.log(findme.indexOf("am")) //4
-console.log(findme.indexOf("am")) //4
-// console.log(findme.indexOf("am",5)) //4
+// let findme="i a am dev am k"
+// console.log(findme.indexOf())// -1
+// console.log(findme.indexOf("py"))// -1 (if no substring is found)
+// console.log(findme.indexOf("am")) //4
+// console.log(findme.indexOf("am")) //4
+// // console.log(findme.indexOf("am",5)) //4
 
 
-console.log(findme.lastIndexOf("am")) //4
-console.log(findme.lastIndexOf("am",4)) //4
+// console.log(findme.lastIndexOf("am")) //4
+// console.log(findme.lastIndexOf("am",4)) //4
+
+
+// startWith 
+// startsWith(searchString: string, position?: number):boolean
+// let url='https://web.whatsapp.com'
+// console.log(url.startsWith("https"))
+// console.log(url.startsWith("https",4))
+// console.log(url.endsWith(".com"))
+
+// replace and replaceAll 
+// String.replace(searchValue: string | RegExp, replaceValue: string): string
+// let names="Python java python "
+// let names1="python java python "
+// console.log(names.replace()) //python java python 
+// console.log(names.replace("python","java")) //python java python 
+// console.log(names.replace(/python/i,"java")) //python java python 
+// console.log(names.replace(/python/ig,"java")) //python java python 
+// console.log(names.replace()) //python java python 
+// console.log(names.replace("python","java")) //python java python 
+// console.log(names.replace(/python/i,"java")) //python java python 
+// console.log(names.replace(/python/ig,"java")) //python java python 
+// console.log(names1.replaceAll("python","java")) //python java python 
+// console.log(names1.replace("python","java")) //python java python 
+// console.log(names.replaceAll(/python/,"java")) //python java python 
+
+
+// const data="i am java dev with dev knowledge"
+// console.log(data.matchAll("dev").next())
+
+
+
+
+let mobile="Iphone max"
+let mobileprice="1900"
+console.log(mobile.toUpperCase().includes("IPHONE"))
+
+let res=mobile.concat(mobileprice)
+console.log(res)
+
+console.log(mobile.search("max"))
+
+
+// search methods
+// indexof()
+// Lastindexof()
+// includes()
+// search()
+// match()
+// matchAll()
+// chart()
+// chartcodeAt()
+
+// let a="abc"
+// console.log(a.charAt(1))
+// console.log(a.charCodeAt(0))
