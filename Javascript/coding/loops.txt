@@ -1,41 +1,3 @@
-
-// for(initialization;condition ;increment/decrement){
-//     //code here
-// }
-
-// for(let i=1;i<=10;i++){
-//     console.log("bow")
-// }
-// // for(let i=1;i<=10;i++){
-// //     console.log("bow")
-// //     if(i%2==0){
-// //         console.log(i)
-// //     }
-// // }
-
-// // for(let i=10;i>=1;i--){
-// //     console.log("wob")
-// // }
-
-// // let n=10
-// // for(let i=2;i<=n;i+=2){
-// //     console.log(i)
-// //     i+=4
-// // }
-
-// // // initialization
-// // while(condition){
-// // //  increment 
-// // }
-
-// // let i=1
-// // while(i<=10){
-// //     console.log("hello")
-// //     i++
-// // }
-
-
-
 // // what is loop ?
 
 // // 1.where to start  i=1
@@ -152,36 +114,128 @@ function sumOfEvenNumber(n){
 let res1=reverseNumber(1234)
 console.log(res1)
 
-// write a function to reverse a number  using for loop without using toString method  
-// write a function to count number vowels in a given string using the for loop 
-// write a function to count number constants in a given string using the for loop 
-// write a function to count number digits in a given number using the for loop 
-// write a function to count even  digits in a given number using the for loop 
-// write a function to print  sum even digits in a given number using the for loop 
+### 🧮 1. Reverse a Number (Without using toString)
+```js
+function reverseNumber(num) {
+  let rev = 0;
+  for (; num > 0; num = Math.floor(num / 10)) {
+    let digit = num % 10;
+    rev = rev * 10 + digit;
+  }
+  return rev;
+}
+```
 
+### 🧮 2. Reverse a Number (Using String Method)
+```js
+function reverseNumberStr(num) {
+  let str = num.toString();
+  let rev = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    rev += str[i];
+  }
+  return parseInt(rev);
+}
+```
 
-1.what are natural numbers  
-    def:
-     steps take an input user 5 
-     check for i natural or not 
-      repeat upto the n
-      print the number is natural or not 
+---
 
-    usage 
-     application 
-  what are whole numbers
-2.what are composite numbers 
-3.what are integers 
-4.what are factors
-5.what are divisors and remainder and how to get those remainders and divisors
-6.what are prime numbers
-7.what is gcd 
-8.what is lcm 
-9 how to print the square and cubes of a numbers (steps for it)
-10 what is  amstrong number
-11 what is  strong number
-12 what is  perfect number
-13.how get last degits and how to remove last degits
-14.what is palindrome
-15 how to reverse a number 
- 
+### 🔤 3. Count Vowels in a String (Using for loop)
+```js
+function countVowels(str) {
+  let count = 0;
+  const vowels = 'aeiouAEIOU';
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) count++;
+  }
+  return count;
+}
+```
+
+### 🔤 4. Count Consonants in a String (Using for loop)
+```js
+function countConsonants(str) {
+  let count = 0;
+  const vowels = 'aeiouAEIOU';
+  for (let i = 0; i < str.length; i++) {
+    let ch = str[i].toLowerCase();
+    if (/[a-z]/.test(ch) && !vowels.includes(ch)) {
+      count++;
+    }
+  }
+  return count;
+}
+```
+
+---
+
+### 🔢 5. Count Number of Digits (Without string methods)
+```js
+function countDigits(num) {
+  let count = 0;
+  for (; num > 0; num = Math.floor(num / 10)) {
+    count++;
+  }
+  return count;
+}
+```
+
+### 🔢 6. Count Number of Digits (With string method)
+```js
+function countDigitsStr(num) {
+  return num.toString().length;
+}
+```
+
+---
+
+### 🧠 7. Count Even Digits in a Number (Without string)
+```js
+function countEvenDigits(num) {
+  let count = 0;
+  for (; num > 0; num = Math.floor(num / 10)) {
+    let digit = num % 10;
+    if (digit % 2 === 0) count++;
+  }
+  return count;
+}
+```
+
+### 🧠 8. Count Even Digits (With string method)
+```js
+function countEvenDigitsStr(num) {
+  let str = num.toString();
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (parseInt(str[i]) % 2 === 0) count++;
+  }
+  return count;
+}
+```
+
+---
+
+### ➕ 9. Sum of Even Digits (Without string method)
+```js
+function sumEvenDigits(num) {
+  let sum = 0;
+  for (; num > 0; num = Math.floor(num / 10)) {
+    let digit = num % 10;
+    if (digit % 2 === 0) sum += digit;
+  }
+  return sum;
+}
+```
+
+### ➕ 10. Sum of Even Digits (With string method)
+```js
+function sumEvenDigitsStr(num) {
+  let str = num.toString();
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    let digit = parseInt(str[i]);
+    if (digit % 2 === 0) sum += digit;
+  }
+  return sum;
+}
+```
