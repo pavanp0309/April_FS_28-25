@@ -140,3 +140,72 @@
 // }
 // let even=newdata(res)
 // console.log(even)
+
+
+
+// console.log(ar.map())
+// map(function(){})
+// map(()=>{})
+// function Callme(){
+
+// }
+// map(Callme)
+// function callme(ele,index,newarr){
+
+// }
+// map(function(ele,index,newarr){})
+// map((ele,index,newarr)=>{})
+// map(callme)
+
+let ar=[1,2,3,4,5,6,7,8,9,10]
+
+// let res=ar.map(function(ele,index,newar){
+//   console.log("ele",ele*4)
+//   console.log("index",index)
+//   console.log("newarr",newar)
+//   return ele*3
+// })
+// console.log(res)
+
+// let res1=ar.map(function(_,index,_){
+
+//   console.log("index",index)
+
+//   return index*3
+// })
+// console.log(res1)
+
+
+// let oddnum=[]
+// for(let i=0;i<ar.length;i++){
+//   if(ar[i]%2!==0){
+//   oddnum.push(ar[i])
+//   }
+// }console.log(oddnum)
+
+// let res2=ar.filter((ele,index,newar)=>{
+//    return ele%3==0
+// })
+// console.log(res2)
+
+let ar1=[1,2,3,4,5,6,7,8,9,10]
+// let res3=ar1.reduce((total,ele,index,newarra)=>{
+//  console.log("total",total)
+//  console.log("ele",ele)
+//  return total+ele
+// },100)
+
+let forme1=ar1.map((ele,i,newarr)=>ele*2)
+let forme=ar1.forEach((ele,i,newarr)=>ele*2)
+console.log(forme1)
+console.log(forme)
+
+
+// let sort=forme1.sort((a,b)=>{
+//   console.log("a",a)
+//   console.log("b",b)
+// })
+// console.log(sort)
+
+let data=forme1.reverse()
+console.log(data)

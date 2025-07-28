@@ -1,0 +1,60 @@
+What are natural numbers?
+
+What are whole numbers?
+
+What are composite numbers?
+
+What are integers?
+
+What are factors?
+
+What are divisors and remainders?
+
+How to get the remainder and divisor from a number?
+
+What are prime numbers?
+
+What is GCD / HCF?
+
+What is LCM?
+
+How to print the squares and cubes of numbers (steps only)?
+
+What is an Armstrong number?
+
+What is a Strong number?
+
+What is a Perfect number?
+
+How to get the last digit of a number?
+
+How to remove the last digit of a number?
+
+What is a palindrome number?
+
+Coding Questions (Using for loop only)
+Write a function to reverse a number using a for loop (without using toString).
+
+Write a function to count the number of vowels in a given string using a for loop.
+
+Write a function to reverse a given string using a for loop (without using built-in functions).
+
+Write a function that counts the number of odd numbers from 1 to n using a for loop.
+
+Write a function to count the number of consonants in a given string using a for loop.
+
+Write a function to count the number of digits in a given number using a for loop.
+
+Write a function to count the number of even digits in a given number using a for loop.
+
+Write a function to print the sum of even digits in a given number using a for loop.
+
+Write a function to calculate the sum of odd numbers from 1 to n using a for loop.
+
+Write a function to calculate the sum of even numbers from 1 to n using a for loop.
+
+Write a function to print numbers from 1 to n in reverse order using a for loop.
+
+Write a function to print odd numbers from 1 to n using a for loop.
+
+Write a function to print even numbers from 1 to n using a for loop.

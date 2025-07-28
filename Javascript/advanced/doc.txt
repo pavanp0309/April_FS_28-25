@@ -1,0 +1,25 @@
+1.accessing methods
+2.traversing
+3.manipulation
+4.adding styles through dom ATTRIBUTES
+5.events 
+
+ATTRIBUTES : which gives additional information
+eg: 
+class id type placeholder alt name for 
+
+<!-- heading-->
+<h1 id="id1" class="c2">hello</h1>
+h1:element node
+hello: text-node
+<!-- heading--> : comment node 
+<!Doctype html/> :root node
+
+different ways to access the Html elements 
+1. document.getElementById() method
+2. document.getElementByClassName() method
+3. document.getElementByTagName() method
+
+4.document.querySelector() // can access id class tags
+4.document.querySelectorAll() // can access id class tags
+
