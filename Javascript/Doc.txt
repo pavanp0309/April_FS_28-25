@@ -84,6 +84,7 @@ Casesentive
  var B=12 ---->#31
  console.log(b) //10
 
+ 
 
  Terminolgies 
 

@@ -23,3 +23,63 @@ different ways to access the Html elements
 4.document.querySelector() // can access id class tags
 4.document.querySelectorAll() // can access id class tags
 
+Events :actions 
+clicking the button ,typing in the keyboard scrolling drag and drop
+
+Different Types of events 
+1.keyboard Events : keyup keydown and keyPress 
+2.mouseEvents :onmouseHover,onmouseLeave onMouseEnter ondblClick onclick etc..
+3.Form Events : onsubmit onfocus onchange etc...
+4.BrowserEvents :onreload , onscroll ,ondocumentContentload onresize etc..
+5.Drap& Drop events  etc...
+
+
+eventHandlers : are functions which excutes the piece of code when a event is trigged
+eventListners :
+
+Different ways to add events to Html 
+1.Directly through html ATTRIBUTES 
+2.Through Dom Attributes 
+3.through addeventListener
+
+
+
+Bom : Browser Object Model 
+ Window  : 
+
+ Usecases :
+  Timers-countdown Timers
+   location - url Information ? search functionalities
+   screen sizes and orinetation 
+   history 
+   cookies 
+   storage , sessions ,open ,close ,resizing etc ...
+   app information (navigator)
+
+
+
+   Properties of Browser object Model 
+
+   1.screen
+   2.history 
+   3.location
+   4.navigator 
+   5.localstorage
+   6.sessionstorage
+   7.cookies  
+   8.innerHeight
+   9.innerwidth
+
+
+   methods 
+
+   open 
+   close 
+   setInterval 
+   setTimeOut
+   clearInterval
+   clearTimeOut
+   fetch
+   alert()
+   prompt()
+   confirm() etc ...
