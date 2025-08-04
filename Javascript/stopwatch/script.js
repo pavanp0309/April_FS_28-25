@@ -1,57 +1,75 @@
 // initial timer values
 let timer;
 let [hours, min, sec, millisec] = [0, 0, 0, 0];
-console.log(hours);
 let isRunning = false;
 
 // get all the elements to add functionalities
 let display = document.querySelector(".display");
 let startBtn = document.querySelector(".start-btn");
 let stopBtn = document.querySelector(".stop-btn");
-let ResetBtn = document.querySelector(".reset-btn");
+let resetBtn = document.querySelector(".reset-btn");
 
-// adding events to each elements
+// adding events to each button
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
-ResetBtn.addEventListener("click", resetTimer);
+resetBtn.addEventListener("click", resetTimer);
 
-// function for Starting the time
+// function to start the timer
 function startTimer() {
-    if(!isRunning){//temporily making is running true to start the timer
-        isRunning=true
-       timer=setInterval(updateTimer,10)
+    if (!isRunning) {
+        isRunning = true;
+        timer = setInterval(updateTimer, 10); // update every 10ms
     }
 }
-// function for Stoping the time
+
+// function to stop the timer
 function stopTimer() {
-    if(isRunning){
-        isRunning=false
-        clearInterval(timer)
+    if (isRunning) {
+        isRunning = false;
+        clearInterval(timer);
     }
 }
-// function for reset the time
+
+// function to reset the timer
 function resetTimer() {
     clearInterval(timer);
     [hours, min, sec, millisec] = [0, 0, 0, 0];
+    isRunning = false;
+    updateDisplay(); 
 }
-// function to update the Timer value(calculate time)
+
+// function to update the time values
 function updateTimer() {
-  millisec = millisec + 10;
-  if (millisec >= 1000) {
-    millisec = 0;
-    sec++;
-    if (sec >= 60) {
-      sec = 0;
-      min++;
-      if (min >= 60) {
-        min = 0;
-        hours++;
-      }
+    millisec += 10;
+    if (millisec >= 1000) {
+        millisec = 0;
+        sec++;
+        if (sec >= 60) {
+            sec = 0;
+            min++;
+            if (min >= 60) {
+                min = 0;
+                hours++;
+            }
+        }
     }
-  }
-  updateDisplay()
+    updateDisplay();
 }
-//function to update the Display 0-9 ===> 01 02 -09
+
+// function to update the display with zero-padded values
 function updateDisplay() {
-    display.textContent=`${hours}:${min}:${sec}:${millisec}`
+    display.textContent =
+        `${pad(hours)}:${pad(min)}:${pad(sec)}.${padMilli(millisec)}`;
+}
+
+// helper function to pad numbers < 10 with leading 0
+function pad(unit) {
+    return unit < 10 ? "0" + unit : unit;
+}
+
+// helper to pad milliseconds to 3 digits
+function padMilli(ms) {
+    if (ms < 10) return "00" + ms;
+    if (ms < 100) return "0" + ms;
+    return ms;
 }
