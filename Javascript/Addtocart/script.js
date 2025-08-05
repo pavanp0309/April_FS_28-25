@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     //🤸‍♀️🤸‍♂️step2: accessing all button elements to as browser loaded
     let addtocartBtn=document.querySelectorAll(".add-to-cart")
     console.log("aBtn",addtocartBtn)
+    // 🛴🛵cartIcon🛴🛵
+    let carticonbtn=document.querySelector(".cart-btn")
     // 👨‍🦰👶step3:acccessing each button individually to apply functionalities
     addtocartBtn.forEach(button=>{
         console.log("atcbtn",button)
@@ -29,6 +31,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         })
        
     })
+
+    //🚡🚀handling the cart_icon click🚡🚀
+    carticonbtn.addEventListener("click",()=>{
+       window.location.href="cart.html"
+    })
 })
 
 // cartvalue
@@ -36,6 +43,7 @@ let cartItems=[]
 
 // function to add items to cart
 function addtocart(product){
+  console.log("atcf",product)
       let existingItems=cartItems.find(item=>item.title == product.title)
        console.log(existingItems)
       if(existingItems){
@@ -43,15 +51,28 @@ function addtocart(product){
       }else{
         cartItems.push(product)
       }
+    // adding items to local_storage once after user click addtocart
+    localStorage.setItem("cart",JSON.stringify(cartItems))
+    handleCartIconVal()
 }
 console.log(cartItems)
 // function to increment cart icon_total
+function handleCartIconVal(){
+   let cartIcon=document.querySelector("#cart-val")
+   let cartVal=cartItems.reduce((total,ele)=>total+ele.quantity,0)
+   cartIcon.innerHTML=cartVal
+   console.log(cartVal)
+}
 // function to loadthe cart 
+function loadCart(){
+ let localcartItems=localStorage.getItem("cart")
+//  it loads the cart Icon values when if items exist in db-storage and parse it
+ if(localcartItems){
+  cartItems=JSON.parse(localcartItems)
+  handleCartIconVal()
+ }
+}
+loadCart()
 
 
-// function to Update the  cart ui 
-// function to increment the items Quantity
-// function to decrement the items Quantity
-// function to delete  the single Products 
-// function to calculate the cart Total
-// function to to clear the Entire cart
+
