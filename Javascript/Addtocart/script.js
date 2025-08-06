@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     let addtocartBtn=document.querySelectorAll(".add-to-cart")
     console.log("aBtn",addtocartBtn)
     // 🛴🛵cartIcon🛴🛵
-    let carticonbtn=document.querySelector(".cart-btn")
+    let carticonbtn=document.querySelectorAll(".cart-btn")
     // 👨‍🦰👶step3:acccessing each button individually to apply functionalities
     addtocartBtn.forEach(button=>{
         console.log("atcbtn",button)
@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
     //🚡🚀handling the cart_icon click🚡🚀
-    carticonbtn.addEventListener("click",()=>{
+    carticonbtn.forEach(ele=>{
+      ele.addEventListener("click",()=>{
        window.location.href="cart.html"
+    })
     })
 })
 
@@ -58,9 +60,11 @@ function addtocart(product){
 console.log(cartItems)
 // function to increment cart icon_total
 function handleCartIconVal(){
-   let cartIcon=document.querySelector("#cart-val")
+   let cartIcon=document.querySelectorAll("#cart-val")
    let cartVal=cartItems.reduce((total,ele)=>total+ele.quantity,0)
-   cartIcon.innerHTML=cartVal
+   cartIcon.forEach((ele)=>{
+       ele.innerHTML=cartVal
+   })
    console.log(cartVal)
 }
 // function to loadthe cart 
