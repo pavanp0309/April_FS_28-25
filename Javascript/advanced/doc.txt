@@ -83,3 +83,194 @@ Bom : Browser Object Model
    alert()
    prompt()
    confirm() etc ...
+
+
+
+   What is a Callback?
+A callback is just a function passed as an argument to another function, which will be called later inside that function.
+
+The “later” can mean:
+
+Immediately (synchronously) – before the outer function finishes.
+
+After some delay or external work (asynchronously) – e.g., after a timer, API response, file read, etc.
+
+Synchronous Callback
+A synchronous callback runs right away during the execution of the parent function, blocking the rest until it’s done.
+
+function registerUser(userData, validate, saveToDB) {
+    validate(userData); // callback 1
+    saveToDB(userData); // callback 2
+    console.log("User registered successfully.");
+}
+
+registerUser(
+    { username: "Boss", password: "123" },
+    function validate(data) {
+        console.log("Validating user:", data.username);
+    },
+    function save(data) {
+        console.log("Saving user:", data.username, "to database");
+    }
+);
+
+ Asynchronous Callback
+An asynchronous callback runs later — after the current execution stack is finished, typically triggered by:
+
+setTimeout / setInterval
+
+File or network operations
+
+Event listeners
+
+
+// Step 1: Sync - Adding item to cart
+function addItemToCart(item, updateCartUI) {
+    console.log(`Adding ${item} to cart`);
+    updateCartUI(item); // runs immediately
+}
+
+// Step 2: Async - Checkout process
+function checkout(paymentInfo, onPaymentComplete) {
+    console.log("Processing payment...");
+
+    setTimeout(function() { // simulate payment gateway delay
+        console.log("Payment approved!");
+        onPaymentComplete();
+    }, 3000);
+}
+
+// Usage
+addItemToCart("Laptop", function(item) {
+    console.log(`Cart updated with ${item}`);
+});
+
+checkout({ card: "**** **** **** 1234" }, function() {
+    console.log("Order confirmed!");
+});
+
+
+
+function Register(username) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Register");
+      resolve(username);
+    }, 1000);
+  });
+}
+
+function Login(username) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Login", username);
+      resolve(username);
+    }, 1000);
+  });
+}
+
+function Welcome(username) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Welcome", username);
+      resolve(username);
+    }, 1000);
+  });
+}
+
+function Shop(username) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Shop", username);
+      resolve(username);
+    }, 1000);
+  });
+}
+
+function AddToCart(username) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("AddToCart", username);
+      resolve(username);
+    }, 1000);
+  });
+}
+
+function Checkout(username) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Checkout", username);
+      resolve();
+    }, 1000);
+  });
+}
+
+// Promise chaining
+Register("Srinivas")
+  .then(Login)
+  .then(Welcome)
+  .then(Shop)
+  .then(AddToCart)
+  .then(Checkout)
+  .catch((err) => console.error(err));
+
+// Simulating an API delay
+function simulateDelay(task, ms = 1000) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(task);
+      resolve(task.split(" ")[0]); // returns username in our flow
+    }, ms);
+  });
+}
+
+// Step 1: Register
+function Register(username) {
+  return simulateDelay(`Registering ${username}`);
+}
+
+// Step 2: Login
+function Login(username) {
+  return simulateDelay(`Logging in ${username}`);
+}
+
+// Step 3: Welcome
+function Welcome(username) {
+  return simulateDelay(`Welcome ${username}`);
+}
+
+// Step 4: Shop
+function Shop(username) {
+  return simulateDelay(`Shopping for ${username}`);
+}
+
+// Step 5: Add to Cart
+function AddToCart(username) {
+  return simulateDelay(`Adding to cart for ${username}`);
+}
+
+// Step 6: Checkout
+function Checkout(username) {
+  return simulateDelay(`Checking out for ${username}`);
+}
+
+// Main async flow
+async function UserFlow() {
+  try {
+    const user = await Register("Srinivas");
+    await Login(user);
+    await Welcome(user);
+    await Shop(user);
+    await AddToCart(user);
+    await Checkout(user);
+
+    console.log("✅ User flow completed successfully!");
+  } catch (error) {
+    console.error("❌ Error in user flow:", error);
+  }
+}
+
+// Run the flow
+UserFlow();
+
+
