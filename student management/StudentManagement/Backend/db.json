@@ -1,0 +1,9 @@
+{
+    "students":[
+        {"id":"1", "name":"ravi", "age":"30", "email":"ravi@gmail.com","mobile":77777},
+        {"id":"1", "name":"ravi", "age":"30", "email":"ravi@gmail.com","mobile":77777}
+    ],
+    "trainers":[
+        {"id":"1", "name":"ravi", "age":"30", "email":"ravi@gmail.com"}
+    ]
+}

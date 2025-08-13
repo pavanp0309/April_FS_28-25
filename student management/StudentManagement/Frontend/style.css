@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.create-btn{
+    transition: all 0.2s linear;
+}
+.create-btn:hover{
+    background-color: green !important;
+    color: white !important;
+}

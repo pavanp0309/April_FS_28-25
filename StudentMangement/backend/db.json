@@ -1,0 +1,9 @@
+{
+  "students":[
+     { "id": "1", "name": "ravi", "age":10,"email":"ravikumar" },
+     { "id": "2", "name": "ramu", "age":30,"email":"ramukumar" }
+    ],
+    "trainers":[
+        { "id": "1", "name": "ravi", "age":10,"email":"ravikumar" }
+    ]
+}
